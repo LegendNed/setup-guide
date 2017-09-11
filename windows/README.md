@@ -1,5 +1,7 @@
 # How to setup a Windows dev environment
 
+Please follow these instructions carefully. If you encounter any roadblocks, contact us on your cohort's Slack channel.
+
 ## System requirements
 
 Windows 10 x64 Version 1607 Build 14393 or higher.
