@@ -77,6 +77,28 @@ Run the following commands in this order:
 
 `$ sudo apt-get install -y mongodb-org`
 
+`$ sudo mkdir -p /data/db`
+
+If you have a problem such as "No such file or directory" run:
+
+`$ sudo mkdir -p /data`
+
+By using the sudo command you will be asked to enter your password. You will not see it appear on the screen for security reasons but type it anyway and hit enter when you're done.
+
+Then make the sub directory:
+
+`$ sudo mkdir -p /data/db`
+
+And make sure that directory is writable by modifying the permissions:
+
+```
+$ sudo chown -R `id -un` /data/db
+```
+
+Check mongo is working by running:
+
+`$ mongod`
+
 Comfirm it has worked by running:
 
 `$ sudo service mongod start`
@@ -87,12 +109,32 @@ You should see something like this:
 
 You can then stop the service by hitting Ctrl + C
 
-### Install PostgreSQL
+### Install PostgreSQL
 
 PostgreSQL is another database we'll use during the course. Again, don't worry if this doesn't seem to go as you planned, you won't need it for the Precourse and we can sort you out at the install session!
 
 Run this command in your terminal:
 
 `$ sudo apt-get install postgresql postgresql-contrib`
+
+Please also run the following commands to create a database user for Postgres.
+
+`$ sudo -u postgres createuser --superuser $USER`
+
+`$ sudo -u postgres createdb $USER`
+
+Then run this command to enter the terminal application for PostgreSQL:
+
+`$ psql`
+
+You should see a screen that looks like this (with your username instead of 'Harriet')
+
+Type:
+
+`ALTER USER username WITH PASSWORD 'mysecretword123';`
+
+Instead of **username** type your Ubuntu username and instead of 'mysecretword123' choose your own password and be sure to wrap it in quotation marks. Use a simple password like 'password'. DONT USE YOUR LOGIN PASSWORD!
+
+You can exit out of psql by typing `\q`
 
 And that's it!
