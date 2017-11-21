@@ -26,13 +26,6 @@ For more details, see [this page on Microsoft Developer Network](https://msdn.mi
 
 </details>
 
-## Install the Hyper terminal
-
-Hyper is a terminal emulator with more user friendly features than Windows' native terminal. You can download and install it by going to https://hyper.is/
-
-From now on, when I mention "the terminal" I mean Hyper unless specified otherwise.
-
-To access the UNIX terminal just type `bash`.
 
 ## Install cURL and Git
 
@@ -40,85 +33,54 @@ cURL is a command line utility that allows you to make requests to websites from
 
 Git is the version control system that we'll use to keep track of our code. We'll talk more about it during pre-course and you will use it extensively for the rest of your career as a software developer.
 
-To install them, run the following commands on your terminal:
+Firstly, open your terminal application and access the UNIX terminal by typing `bash`.
+
+Now you are using bash, run the following commands on your terminal:
 
 ```
 sudo apt-get install curl
 sudo apt-get install git
 ```
 
-## Install Zsh and Oh-My-Zsh
+## A better terminal application
 
-The Z shell and the cosmetic package Oh-My-Zsh allows to have a nicer, clearer looking terminal. One of its main benefits is that it displays colour coded information about your current path, Git branch and status and gives you a ton of handy typing shortcuts for common commands.
+Now you've installed Git, it comes with a lightweight and performant bash terminal application called **git bash**. Search for this in your applications and from now on use this as your defautl terminal application.
 
-<details>
-<summary>Instructions</summary>
-
-1. Install ZSH by ruunning the following command on your terminal:
-
-```
-sudo apt-get install zsh
-```
-
-2. Install `oh-my-zsh` by running the following command on your terminal:
-
-```
-curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh | bash
-```
-
-3. By default your terminal will start using bash and you can manually switch to zsh by simply typing `zsh`. We can automate this by following these steps:
-
-  - On your terminal, type `nano ~/.bashrc`. This will open the bash configuration file (`.bashrc`) with the terminal text editor called `nano`.
-  - At the beginning of the file add the following line (leave everything else as is):
-    ```
-    bash -c zsh
-    ```
-  - To save and exit type `Ctrl+X` then `y` and then hit `Enter`.
-
-4. Currently, Hyper's default shell is Windows' native one, which you are not going to use that often. To make `bash` your default shell, follow these steps:
-
-  - On Hyper, go to **Edit -> Preferences** (or type `Ctrl+,`). This will open a text file on Notepad.
-  - On the text file (name `.hyper.js`) look for the part where it says `shell: '',`.
-  - Replace that line with the following: `shell: 'C:\\Windows\\System32\\bash.exe',`, save and close the document.
-  - When you restart your Hyper terminal it should immediately be using your nice ZSH + oh-my-zsh shell.
-  
-  Reference: [this tutorial](https://evdokimovm.github.io/windows/zsh/shell/syntax/highlighting/ohmyzsh/hyper/terminal/2017/02/24/how-to-install-zsh-and-oh-my-zsh-on-windows-10.html)
-
-</details>
 
 ## Install Node.js
 
-So far you could only run JavaScript code on a web browser, attached to an HTML. Node.js allows us to run JavaScript code directly from our terminal. We'll use Node.js extensively during the course so it's important to have an up-to-date version installed.
+So far you could only run JavaScript code on a web browser, attached to an HTML page. Node.js allows us to run JavaScript code directly from our terminal. We'll use Node.js extensively during the course and on the Precourse so it's important to have an up-to-date version installed.
 
-<details>
-<summary>Instructions</summary>
+Run this command in your terminal to install Node Version Manager which allows you to easily download the latest version of Node, and switch between versions at a later date if you need to:
 
-1. Install `nvm` (Node Version Manager) by running this command:
+`$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash`
 
-```
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.4/install.sh | bash
-```
+Check it has installed correctly by typing this command on the terminal:
 
-2. Run `nano ~/.zshrc` and paste the following lines at the beginning of the file. Hit `Ctrl+X`, `y` and `Enter` to save and exit.
+`$ nvm --version`
 
-```
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
-```
+Again, if you see a version number you are good.
 
-3. Restart your terminal.
-4. To install the latest stable version of Node.js run this command:
+Now install Node using NVM:
 
-```
-nvm install node
-```
+`$ nvm install node`
 
-5. To check the installation was successful run these commands:
+`$ nvm use node`
 
-```
-node -v
-npm -v
-```
+You may need to quit and reopen your terminal application before you see it has been successful. To check success, type:
 
-You should see version numbers like `8.4.0` and `5.3.0` or higher respectively.
-</details>
+`$ node --version`
+
+If you have an earlier version than 6, type:
+
+`$ nvm install 8.6.0`
+
+`$ nvm use 8.6.0`
+
+`$ node --version` 
+
+Now you should see that you are using Node version 8.6.0
+
+### MongoDB
+
+### PostgreSQL
