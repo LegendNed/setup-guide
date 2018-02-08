@@ -94,7 +94,7 @@ If you see something like this you are good:
 
 ![mongo](img/mongo.png)
 
-You can then stop the service by hitting Cmd + C
+You can then stop the service by hitting Ctrl + C
 
 ### Install PostgreSQL
 
