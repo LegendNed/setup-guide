@@ -1,7 +1,7 @@
 # How to set up a Linux Dev environment
 
 
-### Install Git
+## Install Git
 
 Open up your terminal and run the following commands in this order:
 
@@ -20,22 +20,37 @@ And you should see a version number. If not, you may need to close and reopen yo
 
 ## A Better Terminal Application
 
-Type the following commands to install a better terminal application called Terminator:
-
-`$ sudo add-apt-repository ppa:gnome-terminator`
+Type the following commands to install a terminal application called Terminator, which allows you to have multiple terminal instances in one window:
 
 `$ sudo apt-get update`
 
 `$ sudo apt-get install terminator`
 
-### Install NVM (Node Version Manager) and Node
+## Install curl
+
+curl is the command line tool and library that is used for transferring data with URL syntax. To make sure you have curl installed please run the following:
+
+`$ curl --version`
+
+If you see a version number then skip ahead to the next section. If not then:
+
+`$ sudo apt-get update`
+
+`$ sudo apt-get install curl`
+Then run `$ curl --version` to ensure it worked correctly
+
+## Install NVM (Node Version Manager) and Node
 
 So far you could only run JavaScript code on a web browser, attached to an HTML page. Node.js allows us to run JavaScript code directly from our terminal. We'll use Node.js extensively during the course and on the Precourse so it's important to have an up-to-date version installed.
 
 
-Run this command in your terminal to install Node Version Manager which allows you to easily download the latest version of Node, and switch between versions at a later date if you need to:
+Run these commands in your terminal to install Node Version Manager which allows you to easily download the latest version of Node, and switch between versions at a later date if you need to:
+
+`$ touch ~/.bash_profile`
 
 `$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash`
+
+`$ source ~/.nvm/nvm.sh`
 
 Check it has installed correctly by typing this command on the terminal:
 
@@ -61,7 +76,7 @@ If you have an earlier version than 6, type:
 
 `$ node --version` 
 
-Now you should see that you are using Node version 8.6.0
+Now you should see that you are using Node 
 
 ## MongoDB
 
@@ -83,8 +98,6 @@ If you have a problem such as "No such file or directory" run:
 
 `$ sudo mkdir -p /data`
 
-By using the sudo command you will be asked to enter your password. You will not see it appear on the screen for security reasons but type it anyway and hit enter when you're done.
-
 Then make the sub directory:
 
 `$ sudo mkdir -p /data/db`
@@ -99,17 +112,10 @@ Check mongo is working by running:
 
 `$ mongod`
 
-Comfirm it has worked by running:
-
-`$ sudo service mongod start`
-
-You should see something like this:
-
-![mongod](img/mongo.png)
 
 You can then stop the service by hitting Ctrl + C
 
-### Install PostgreSQL
+## Install PostgreSQL
 
 PostgreSQL is another database we'll use during the course. Again, don't worry if this doesn't seem to go as you planned, you won't need it for the Precourse and we can sort you out at the install session!
 
@@ -127,13 +133,11 @@ Then run this command to enter the terminal application for PostgreSQL:
 
 `$ psql`
 
-You should see a screen that looks like this (with your username instead of 'Harriet')
-
-Type:
+Now type:
 
 `ALTER USER username WITH PASSWORD 'mysecretword123';`
 
-Instead of **username** type your Ubuntu username and instead of 'mysecretword123' choose your own password and be sure to wrap it in quotation marks. Use a simple password like 'password'. DONT USE YOUR LOGIN PASSWORD!
+BUT Instead of **username** type your Ubuntu username and instead of 'mysecretword123' choose your own password and be sure to wrap it in quotation marks. Use a simple password like 'password'. DONT USE YOUR LOGIN PASSWORD!
 
 You can exit out of psql by typing `\q`
 
