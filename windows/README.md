@@ -32,9 +32,7 @@ cURL is a command line utility that allows you to make requests to websites from
 
 Git is the version control system that we'll use to keep track of our code. We'll talk more about it during pre-course and you will use it extensively for the rest of your career as a software developer.
 
-Firstly, open your terminal application and access the UNIX terminal by typing `bash`.
-
-Now you are using bash, run the following commands on your terminal:
+Open Ubuntu and in the terminal instance type:
 
 ```
 sudo apt-get install curl
@@ -45,8 +43,11 @@ sudo apt-get install git
 
 Change this out for Cmder
 
-Now you've installed Git, it comes with a lightweight and performant bash terminal application called **git bash**. Search for this in your applications and from now on use this as your defautl terminal application.
+Now that we've installed git, we need a better terminal emulator to use it with. Cmder provides us with a lot of the funcitonality we would get on a Unix terminal, and let's us have terminal instances in tabs rather than multiple windows open. The latest version can be downloaded from the link below:
 
+http://cmder.net/
+
+Once Cmder has been installed, open it and type `bash`. You will need to enter this command to run bash whenever you open a new instance of Cmder.
 
 ## Install Node.js
 
