@@ -128,3 +128,5 @@ Once you've entered your password and logged in, test it's working correctly by 
 `$ SELECT version();`
 
 And that's it!
+
+If you have any questions or issues then please get in touch on Northcoders-Freshers slack.

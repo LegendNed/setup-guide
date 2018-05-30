@@ -142,3 +142,5 @@ BUT Instead of **username** type your Ubuntu username and instead of 'mysecretwo
 You can exit out of psql by typing `\q`
 
 And that's it!
+
+If you have any questions or issues then please get in touch on Northcoders-Freshers slack.

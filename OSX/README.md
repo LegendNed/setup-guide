@@ -115,3 +115,5 @@ The run these commands in order:
 `$ brew install postgresql`
 
 And that's it!
+
+If you have any questions or issues then please get in touch on Northcoders-Freshers slack.
