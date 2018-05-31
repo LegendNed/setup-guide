@@ -18,9 +18,8 @@ Windows 10 has the option to install a subsystem for Linux that effectively lets
 1. Go to **Settings -> Update and Security -> For developers** and turn **Developer mode** on.
 2. Go to **Control Panel -> Programs and Features -> Turn Windows features on or off** and turn **Windows Subsystem for Linux** on and click 'OK'.
 3. You'll be prompted to restart your computer, click on 'Restart now' to install this new feature.
-4. After your computer has restarted, go to the Windows App Store, search for Ubuntu and click on 'Get'.
-5. Once finished downloading, go to your start menu and search for 'bash' and hit 'Enter'.
-6. This terminal will prompt you to create a UNIX user with a password. **Important:** note thsese down because you'll used them frequently.
+4. After your computer has restarted, go to the Microsoft Store, search for Ubuntu and click on 'Get'.
+5. Once finished downloading launch Ubuntu. The terminal instance will prompt you to create a UNIX user with a password. **Important:** note thsese down because you'll used them frequently.
 
 For more details, see [this page on Microsoft Developer Network](https://msdn.microsoft.com/en-gb/commandline/wsl/install_guide)
 
@@ -33,9 +32,7 @@ cURL is a command line utility that allows you to make requests to websites from
 
 Git is the version control system that we'll use to keep track of our code. We'll talk more about it during pre-course and you will use it extensively for the rest of your career as a software developer.
 
-Firstly, open your terminal application and access the UNIX terminal by typing `bash`.
-
-Now you are using bash, run the following commands on your terminal:
+Open Ubuntu and in the terminal instance type:
 
 ```
 sudo apt-get install curl
@@ -44,8 +41,13 @@ sudo apt-get install git
 
 ## A better terminal application
 
-Now you've installed Git, it comes with a lightweight and performant bash terminal application called **git bash**. Search for this in your applications and from now on use this as your defautl terminal application.
+Change this out for Cmder
 
+Now that we've installed git, we need a better terminal emulator to use it with. Cmder provides us with a lot of the funcitonality we would get on a Unix terminal, and let's us have terminal instances in tabs rather than multiple windows open. The latest version can be downloaded from the link below:
+
+http://cmder.net/
+
+Once Cmder has been installed, open it and type `bash`. You will need to enter this command to run bash whenever you open a new instance of Cmder.
 
 ## Install Node.js
 
@@ -83,4 +85,48 @@ Now you should see that you are using Node version 8.6.0
 
 ### MongoDB
 
+Now for MongoDB, a database we'll be using during the course. Don't worry if this doesn't seem to go as you planned, you won't need it for the Precourse and we can sort you out at the install session!
+
+`$ sudo apt-get update`
+
+`$ sudo apt-get install mongodb`
+
+`$ sudo mkdir -p /data/db`
+
+If you have a problem such as "No such file or directory" run:
+
+`$ sudo mkdir -p /data`
+
+Then make the sub directory:
+
+`$ sudo mkdir -p /data/db`
+
+And make sure that directory is writable by modifying the permissions:
+
+```
+$ sudo chown -R `id -un` /data/db
+```
+
+Check mongo is working by running:
+
+`$ mongod`
+
 ### PostgreSQL
+
+PostgreSQL is another database we'll use during the course. Again, don't worry if this doesn't seem to go as you planned, you won't need it for the Precourse and we can sort you out at the install session!
+
+At the time of writing, the recommended way of installing PostgreSQL on windows is downloading the installer of the official website:
+
+`$ sudo mkdir -p /data/db`
+
+Run the installer and follow the instructions. When asked to provide a password make a note of it and DON'T USE YOUR LOGIN PASSWORD.
+
+once the installation has finished we can run an instance of SQL Shell by launching psql (type 'psql' into the search bar).
+
+Once you've entered your password and logged in, test it's working correctly by typing:
+
+`$ SELECT version();`
+
+And that's it!
+
+If you have any questions or issues then please get in touch on Northcoders-Freshers slack.
