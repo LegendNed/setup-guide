@@ -44,9 +44,12 @@ Now install Node using NVM:
 
 `$ nvm use node`
 
+`$ source ~/.nvm/nvm.sh`
+
 You may need to quit and reopen your terminal application before you see it has been successful. To check success, type:
 
 `$ node --version`
+
 
 If you have an earlier version than 6, type:
 
