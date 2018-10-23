@@ -99,7 +99,7 @@ If you see something like this you are good:
 
 You can then stop the service by hitting Ctrl + C
 
-### Install PostgreSQL
+### Install PostgreSQL
 
 PostgreSQL is another database we'll use during the course. Again, don't worry if this doesn't seem to go as you planned, you won't need it for the Precourse and we can sort you out at the install session!
 
