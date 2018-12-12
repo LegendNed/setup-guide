@@ -78,42 +78,6 @@ If you have an earlier version than 6, type:
 
 Now you should see that you are using Node 
 
-## MongoDB
-
-Now for MongoDB, a database we'll be using during the course. Don't worry if this doesn't seem to go as you planned, you won't need it for the Precourse and we can sort you out at the install session!
-
-Run the following commands in this order:
-
-`$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6`
-
-`$ echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list`
-
-`$ sudo apt-get update`
-
-`$ sudo apt-get install -y mongodb-org`
-
-`$ sudo mkdir -p /data/db`
-
-If you have a problem such as "No such file or directory" run:
-
-`$ sudo mkdir -p /data`
-
-Then make the sub directory:
-
-`$ sudo mkdir -p /data/db`
-
-And make sure that directory is writable by modifying the permissions:
-
-```
-$ sudo chown -R `id -un` /data/db
-```
-
-Check mongo is working by running:
-
-`$ mongod`
-
-
-You can then stop the service by hitting Ctrl + C
 
 ## Install PostgreSQL
 
