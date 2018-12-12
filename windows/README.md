@@ -83,33 +83,6 @@ If you have an earlier version than 6, type:
 
 Now you should see that you are using Node version 8.6.0
 
-### MongoDB
-
-Now for MongoDB, a database we'll be using during the course. Don't worry if this doesn't seem to go as you planned, you won't need it for the Precourse and we can sort you out at the install session!
-
-`$ sudo apt-get update`
-
-`$ sudo apt-get install mongodb`
-
-`$ sudo mkdir -p /data/db`
-
-If you have a problem such as "No such file or directory" run:
-
-`$ sudo mkdir -p /data`
-
-Then make the sub directory:
-
-`$ sudo mkdir -p /data/db`
-
-And make sure that directory is writable by modifying the permissions:
-
-```
-$ sudo chown -R `id -un` /data/db
-```
-
-Check mongo is working by running:
-
-`$ mongod`
 
 ### PostgreSQL
 
