@@ -4,23 +4,23 @@
 
 Run this command on your terminal application to install Homebrew:
 
-`$ ~/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+`~/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 Update Homebrew:
 
-`$ brew update`
+`brew update`
 
 ### Install Git
 
 See if you already have Git by running:
 
-`$ git --version`
+`git --version`
 
 If you already have Git it will tell you a version number.
 
 If you do not see a version number, install Git with Homebrew:
 
-`$ brew install git`
+`brew install git`
 
 Run `$ git --version` again to confirm Git has been installed.
 
@@ -34,30 +34,30 @@ Run this command in your terminal to install Node Version Manager which allows y
 
 Check it has installed correctly by typing this command on the terminal:
 
-`$ nvm --version`
+`nvm --version`
 
 Again, if you see a version number you are good.
 
 Now install Node using NVM:
 
-`$ nvm install node`
+`nvm install node`
 
-`$ nvm use node`
+`nvm use node`
 
-`$ source ~/.nvm/nvm.sh`
+`source ~/.nvm/nvm.sh`
 
 You may need to quit and reopen your terminal application before you see it has been successful. To check success, type:
 
-`$ node --version`
+`node --version`
 
 
 If you have an earlier version than 6, type:
 
-`$ nvm install 8.6.0`
+`nvm install 8.6.0`
 
-`$ nvm use 8.6.0`
+`nvm use 8.6.0`
 
-`$ node --version` 
+`node --version` 
 
 Now you should see that you are using Node version 8.6.0
 
@@ -74,11 +74,11 @@ Do not follow any other instructions on the page!
 
 The run these commands in order:
 
-`$ brew update`
+`brew update`
 
-`$ brew doctor`
+`brew doctor`
 
-`$ brew install postgresql`
+`brew install postgresql`
 
 And that's it!
 
