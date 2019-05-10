@@ -10,8 +10,8 @@ Then hit return.
 
 This will install the following things:
 
-- [Brew](https://brew.sh/) A package manager
-- [Node](https://nodejs.org/en/) A JavaScript Runtime
+- [Brew](https://brew.sh/) 
+- [Node](https://nodejs.org/en/)
 - [PSQL](https://www.postgresql.org/)
 - [zsh](https://www.postgresql.org/)
 - [oh-my-zsh](https://ohmyz.sh/)
