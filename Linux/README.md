@@ -22,13 +22,13 @@ Run this command to enter the terminal application for PostgreSQL:
 psql
 ```
 
-Now type:
+Now type the following command, BUT Instead of username type your Ubuntu username and instead of 'mysecretword123' choose your own password and be sure to wrap it in quotation marks.
+
+Use a simple password like 'password'. DONT USE YOUR LOGIN PASSWORD!
 
 ```bash
 ALTER USER username WITH PASSWORD 'mysecretword123';
 ```
-
-BUT Instead of username type your Ubuntu username and instead of 'mysecretword123' choose your own password and be sure to wrap it in quotation marks. Use a simple password like 'password'. DONT USE YOUR LOGIN PASSWORD!
 
 You can exit out of psql by typing \q
 
