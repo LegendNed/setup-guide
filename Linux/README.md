@@ -30,7 +30,7 @@ Use a simple password like 'password'. DONT USE YOUR LOGIN PASSWORD!
 ALTER USER username WITH PASSWORD 'mysecretword123';
 ```
 
-You can exit out of psql by typing \q
+You can exit out of psql by typing `\q`
 
 And that's it!
 
