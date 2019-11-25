@@ -1,4 +1,4 @@
-# How to setup an OSX dev environment
+# How to setup an macOS dev environment
 
 Copy and paste this command into your terminal.
 
