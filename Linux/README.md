@@ -3,7 +3,7 @@
 Copy and paste this command into your terminal.
 
 ```bash
-sudo apt-get update && sudo apt-get upgrade && sudo apt-get install git && sudo apt-get install terminator curl postgresql postgresql-contrib && touch ~/.bash_profile && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash && source ~/.nvm/nvm.sh && nvm install node && nvm use node && sudo -u postgres createuser --superuser $USER && sudo -u postgres createdb $USER
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get install git && sudo apt-get install terminator curl postgresql postgresql-contrib && touch ~/.bash_profile && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash && source ~/.nvm/nvm.sh && nvm install node && nvm use node && sudo -u postgres createuser --superuser $USER && sudo -u postgres createdb $USER && git config --global credential.helper store
 ```
 
 Then hit return.
