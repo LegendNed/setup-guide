@@ -1,6 +1,6 @@
 # How to set up a Linux Dev environment
 
-Copy and paste this command into your terminal.
+Copy and paste this command into your terminal. (If you are using WSL, this should be done in your WSL terminal)
 
 ```bash
 sudo apt-get update && sudo apt-get upgrade && sudo apt-get install git && sudo apt-get install terminator curl postgresql postgresql-contrib && touch ~/.bash_profile && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash && source ~/.nvm/nvm.sh && nvm install node && nvm use node && sudo -u postgres createuser --superuser $USER && sudo -u postgres createdb $USER && git config --global credential.helper store
