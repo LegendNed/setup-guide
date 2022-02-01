@@ -22,6 +22,12 @@ Run this command to enter the terminal application for PostgreSQL:
 psql
 ```
 
+> If you see the following error: `Could not connect to server/database...` or similar, run the following command to ensure that the postgresql server is running before trying the above again:
+>
+> ```bash
+> sudo service postgresql start
+> ```
+
 Now type the following command, BUT Instead of username type your Ubuntu username and instead of 'mysecretword123' choose your own password and be sure to wrap it in quotation marks.
 
 Use a simple password like 'password'. DONT USE YOUR LOGIN PASSWORD!
