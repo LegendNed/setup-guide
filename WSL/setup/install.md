@@ -6,17 +6,17 @@ These installation steps can all be found in the [WSL Documentation]('https://do
 
 ## Installation Steps
 
-![Image of PowerShell installing WSL](./images/ps_admin.png 'Installing WSL using the PowerShell terminal')
+![Image of PowerShell installing WSL](/WSL/images/ps_admin.png 'Installing WSL using the PowerShell terminal')
 
 To install WSL on Windows the first thing you will need to run Powershell as an administrator and enter the following code `wsl --install` and restart your machine.
 
-![Image of Ubuntu terminal on restart](./images/ubuntu_install.png 'Continuing the installation after restarting your machine')
+![Image of Ubuntu terminal on restart](/WSL/images/ubuntu_install.png 'Continuing the installation after restarting your machine')
 
 After restarting your machine you should have an **Ubuntu** terminal pop up (if this doesn't happen you can open it from the start menu) that continues the installation after restart.
 
 If all goes well you should be prompted to create a username and password (this doesn't have to be your Windows login information). This will become the default user with administrator privileges (allowing you to run `sudo` commands!)
 
-And that's it, you're ready to go. Please continue to the next step which is [setting up your dev environment]()!
+And that's it, you're ready to go. Please continue to the next step which is [setting up your dev environment](/WSL/setup/setup.md)!
 
 ---
 
