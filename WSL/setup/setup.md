@@ -35,13 +35,13 @@ Then hit return again, this will install [PSQL](https://www.postgresql.org/).
 A few more steps and we're done!
 
 1. Enter the command: `sudo passwd postgres`
-2. You will get a prompt to enter your new password
-3. Close and reopen your terminal.
+2. You will get a prompt to create a new password for postgres - this is different to your Windows login. After this please close and re-open your terminal.
+3. One more command to run in the terminal: `sudo -u postgres createuser --superuser $USER && sudo -u postgres createdb $USER`. You will likely be asked for the password that you just created.
 
-Finally paste this command into your terminal `sudo service postgresql start && sudo -u postgres psql` and you should see something like the following:
+Finally enter `psql` in your terminal and you should see something like this:
 
 ```bash
-postgres=#
+YOUR_USERNAME_HERE=#
 ```
 
 You can exit Postgres by typing `\q` and hitting return.
