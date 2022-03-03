@@ -2,7 +2,7 @@
 
 Windows Subsystem For Linux is a tool which will allow you to run Linux natively of Windows. It allows you to install a Linux distribution as an app and gives you access to important bash commands such as `git`!
 
-These installation steps can all be found in the [WSL Documentation]('https://docs.microsoft.com/en-us/windows/wsl/install').
+These installation steps can all be found in the [WSL Documentation](https://docs.microsoft.com/en-us/windows/wsl/install).
 
 ## Installation Steps
 
@@ -22,7 +22,7 @@ And that's it, you're ready to go. Please continue to the next step which is [se
 
 ## Common Issues
 
-Unfortunately things don't always go to plan and you may instead get an error message with a code such as `0x80070003`. Included below are a list of errors we commonly see and instructions on how to fix them. If you get an error not listed here please use the troubleshooting guidelines found [here]('https://docs.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues') or post in the **precourse** channel on Slack.
+Unfortunately things don't always go to plan and you may instead get an error message with a code such as `0x80070003`. Included below are a list of errors we commonly see and instructions on how to fix them. If you get an error not listed here please use the troubleshooting guidelines found [here](https://docs.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues) or post in the **precourse** channel on Slack.
 
 | Error Code | Description                                                                   | Link                                                                                                                                                                         |
 | ---------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
