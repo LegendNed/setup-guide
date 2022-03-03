@@ -47,3 +47,7 @@ YOUR_USERNAME_HERE=#
 You can exit Postgres by typing `\q` and hitting return.
 
 And that's everything you need to get started!
+
+---
+
+**Going forward please only use the Ubuntu terminal or the integrated WSL terminal in VSCode. You won't need to use Powershell anymore.**
