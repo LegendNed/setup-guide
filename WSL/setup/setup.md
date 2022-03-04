@@ -4,7 +4,9 @@ First things first here's a little tip that with dramatically improve your exper
 
 ## 1. Open your Ubuntu terminal
 
-Open up **Ubuntu** from the start menu if you haven't already got it open. Then right click on the top bar and select _properties_. In the properties you can check the box which will enable you to use `CTRL-C` and `CTRL-V` shortcuts on the command line.
+Open up **Ubuntu** from the start menu if you haven't already got it open - **This is the only terminal that you should be using from now on**
+
+Then right click on the top bar and select _properties_. In the properties you can check the box which will enable you to use `CTRL-C` and `CTRL-V` shortcuts on the command line.
 
 Now the above is done this next step will be much easier.
 
