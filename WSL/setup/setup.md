@@ -15,7 +15,7 @@ Now the above is done this next step will be much easier.
 Please copy and paste the following into your terminal:
 
 ```bash
-sudo apt-get update && sudo apt-get upgrade && sudo apt-get install git && touch ~/.bash_profile && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash && source ~/.nvm/nvm.sh && nvm install node && nvm use node &&  git config --global credential.helper store
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get install git && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash && source ~/.nvm/nvm.sh && nvm install node && nvm use node &&  git config --global credential.helper store
 ```
 
 Then hit return.
