@@ -14,7 +14,9 @@ To install WSL on Windows the first thing you will need to run Powershell as an 
 
 After restarting your machine you should have an **Ubuntu** terminal pop up (if this doesn't happen you can open it from the start menu) that continues the installation after restart.
 
-If all goes well you should be prompted to create a username and password (this doesn't have to be your Windows login information). This will become the default user with administrator privileges (allowing you to run `sudo` commands!)
+If all goes well you should be prompted to create a **username** and **password**. This doesn't have to be your Windows login information, and it will become the default user with administrator privileges - allowing you to run `sudo` commands.
+
+**You will need sudo permissions throughout the course so make sure you can remember your password! Or even better use a password manager!**
 
 And that's it, you're ready to go. Please continue to the next step which is [setting up your dev environment](/WSL/setup/setup.md)!
 
